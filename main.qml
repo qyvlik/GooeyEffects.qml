@@ -4,15 +4,31 @@ import QtQuick.Window 2.2
 import QtQuick.Dialogs 1.2
 
 ApplicationWindow {
-    title: qsTr("Gooey Drag")
-    width: 400
-    height: 400
+    title: qsTr("Gooey Example")
+    width: 800
+    height: 600
     visible: true
 
-    color: "transparent"
-
-    GooeyDrag {
-        id: canvas
+    TabView {
         anchors.fill: parent
+
+        Tab {
+            title: "gooey drag"
+            source: "./show_gooey_drag.qml"
+        }
+
+        Tab {
+            title: "gooey tail"
+            source: "./show_gooey_tail.qml"
+        }
+
     }
+
+    //color: "transparent"
+
+
+
+
+
 }
+

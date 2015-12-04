@@ -1,4 +1,7 @@
 import QtQuick 2.0
+import QtQuick.Controls 1.4
+import QtQuick.Layouts 1.1
+import QtGraphicalEffects 1.0
 
 Item {
     id: root
@@ -9,12 +12,16 @@ Item {
         text: qsTr("点击查看效果")
     }
 
+
     GooeyTail {
         id: gooeyTail
         width: 160
         height: 40
         anchors.verticalCenter: parent.verticalCenter
     }
+
+
+
 
     state: "left"
 
